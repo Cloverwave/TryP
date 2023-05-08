@@ -36,7 +36,7 @@
         // sync localStorage code //
         // disable if other code wants to implement their own localStorage site wrapper
         if (window.rammerheadDisableLocalStorageImplementation) {
-            delete window.rammerheadDisableLocalStorageImplementation;
+            delete window.rammerheadDisableLocalrStorageImplementation;
             return;
         }
         // consts
