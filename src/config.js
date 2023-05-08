@@ -26,7 +26,7 @@ module.exports = {
     // set them differently from bindingAddress and port if rammerhead is being served
     // from a reverse proxy.
 
-    // getServerInfo: () => ({ hostname: 'localhost', port: 8080, crossDomainPort: 8081, protocol: 'http:' }),
+    getServerInfo: () => ({ hostname: 'localhost', port: 8080, crossDomainPort: 8081, protocol: 'http:' }),
     
     // example of non-hard-coding the hostname header
     // getServerInfo: (req) => {

@@ -263,7 +263,7 @@
         var defaultPort = window.location.protocol === 'https:' ? 443 : 80;
         var currentPort = window.location.port || defaultPort;
         var mainPort = data || defaultPort;
-        if (currentPort != mainPort) window.location.port = mainPort;
+        // if (currentPort != mainPort) window.location.port = mainPort;
     });
 
     api.needpassword(doNeed => {
