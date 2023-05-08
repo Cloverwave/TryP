@@ -1,7 +1,3 @@
-app.get('/', (req, res) => {
-    res.sendStatus(200)
-})
-
 const cluster = require('cluster');
 if (cluster.isMaster) {
     require('dotenv-flow').config();
