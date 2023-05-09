@@ -26,21 +26,21 @@ module.exports = {
     // set them differently from bindingAddress and port if rammerhead is being served
     // from a reverse proxy.
 
-    getServerInfo: () => ({ hostname: 'localhost', port: 8080, crossDomainPort: 8081, protocol: 'http:' }),
+    // getServerInfo: () => ({ hostname: 'https://tryp-3.onrender.com/', port: 8080, crossDomainPort: 8081, protocol: 'https:' }),
     
     // example of non-hard-coding the hostname header
-    // getServerInfo: (req) => {
-    //     return { hostname: new URL('http://' + req.headers.host).hostname, port: 443, crossDomainPort: 8443, protocol: 'https: };
-    // },
+    getServerInfo: (req) => {
+        return { hostname: new URL('http://' + req.headers.host).hostname, port: 443, crossDomainPort: 8443, protocol: 'https:' };
+    },
 
     // enforce a password for creating new sessions. set to null to disable
-    password: 'sharkie4life',
+    password: 'luxbl',
 
     // disable or enable localStorage sync (turn off if clients send over huge localStorage data, resulting in huge memory usages)
     disableLocalStorageSync: false,
 
     // restrict sessions to be only used per IP
-    restrictSessionToIP: true,
+    restrictSessionToIP: false,
 
     // caching options for js rewrites. (disk caching not recommended for slow HDD disks)
     // recommended: 50mb for memory, 5gb for disk
