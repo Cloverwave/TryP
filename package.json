@@ -48,5 +48,6 @@
     "CHANGELOG.md",
     "package.json",
     "README.md"
-  ]
+  ],
+  "keywords": []
 }
